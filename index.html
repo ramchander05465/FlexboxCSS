@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox CSS Tutorials</title>
+    <link href="./styles.css" />
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: azure;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 968px;
+        }
+
+        .container {
+            display: flex;
+            background-color: '#fff';
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .one {
+            flex-grow: 1;
+            background-color: brown;
+        }
+
+        .two {
+            flex-grow: 1;
+            background-color: blue;
+        }
+
+        .three {
+            flex-grow: 1;
+            background-color: green;
+        }
+        nav{
+            background-color: black;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav li{
+            flex: 1 1 0;
+        }
+        nav a{
+            display: block;
+            padding:5px;
+            background-color: #555;
+            text-decoration: none;
+            border:1px solid #777;
+            color:#fff;
+        }
+
+        nav a:hover{
+            background-color: #777
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Testimonial</a></li>
+                <li><a>Feedback</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navigation</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    body {
+      padding: 0px;
+      margin: 0px;
+      background-color: #ccc;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .box {
+      flex-grow: 1;
+    }
+
+    /*.box:nth-child(1) ul{
+      align-items: center
+    }*/
+    
+    .box:nth-child(1) li:first-child a:hover{
+      border-top-left-radius:5px;  
+      border-bottom-left-radius:5px;  
+    }
+
+    .box:nth-child(2){
+      max-width: 170px;
+    }
+
+    .box:nth-child(2) li{
+      flex-grow: 1;
+    }
+
+    .box:nth-child(2) li:first-child a:hover{
+      border-top-left-radius:5px;  
+      border-bottom-left-radius:5px;  
+    }
+
+    .box:nth-child(2) li:last-child a:hover{
+      border-top-right-radius:5px;  
+      border-bottom-right-radius:5px;  
+    }
+
+    nav ul {
+      display: flex;
+      border-radius: 5px;
+      background-color: azure;
+      margin: 10px;
+    }
+
+    nav li {
+      list-style-type: none;
+    }
+
+    nav li a {
+      padding: 15px;
+      display: block;
+      color: black;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="box">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Feedback</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="box">
+      <ul>
+        <li>
+          <a href="">Login</a>
+        </li>
+        <li>
+          <a href="">Sing In</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+
+</html>
